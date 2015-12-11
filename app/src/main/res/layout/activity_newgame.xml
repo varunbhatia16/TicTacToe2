@@ -1,0 +1,233 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#7986CB"
+    android:id="@+id/rel"
+    tools:context="com.cs442.team11.tictactoe.NewgameActivity">
+
+ <!--   <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        &lt;!&ndash;<TextView
+            android:id="@+id/name"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dip"
+            android:textStyle="bold"/>&ndash;&gt;
+
+        <TextView
+            android:id="@+id/symtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:textStyle="bold"
+            android:text="Your Symbol:"/>
+
+
+
+        <ImageView
+            android:id="@+id/sym"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/symtitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textStyle="bold"
+            android:text="Computer Symbol:"/>
+
+        <ImageView
+            android:id="@+id/sym1"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textStyle="bold"
+
+            />
+    </LinearLayout>-->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/symtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YOU"
+            android:layout_marginStart="15dp"
+            android:paddingStart="15dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/sym"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:layout_alignLeft="@+id/symtitle"
+            android:layout_below="@+id/symtitle"
+            />
+
+        <TextView
+            android:id="@+id/symtitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/sym"
+            android:text="COMPUTER"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/sym1"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:layout_alignLeft="@+id/symtitle1"
+            android:layout_below="@+id/symtitle1"
+            android:layout_marginRight="60dp"
+            />
+
+        <Chronometer
+            android:id="@+id/mychronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/sym1"/>
+
+    </RelativeLayout>
+    <!--  android:layout_marginRight="20dp"
+       android:layout_marginTop="7dip"
+
+         android:layout_alignParentRight="true"
+           android:layout_marginRight="10dip"
+           android:layout_marginTop="7dip"
+
+            android:layout_marginRight="20dp"
+           android:layout_marginTop="7dip"
+
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="10dip"
+           android:layout_marginTop="7dip"-->
+    <ImageButton android:id="@+id/b3"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dip"
+            android:layout_marginTop="60dip"
+            android:layout_marginRight="10dip"
+            android:scaleType="fitXY"
+            android:tag="3"
+
+            />
+        <ImageButton android:id="@+id/b2"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_toLeftOf="@id/b3"
+            android:layout_marginTop="60dip"
+            android:scaleType="fitXY"
+            android:tag="2"
+            />
+        <ImageButton android:id="@+id/b1"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_toLeftOf="@id/b2"
+            android:layout_marginTop="60dip"
+            android:scaleType="fitXY"
+            android:tag="1"
+            />
+
+        <ImageButton android:id="@+id/b6"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dip"
+            android:layout_below="@id/b3"
+            android:layout_marginRight="10dip"
+            android:scaleType="fitXY"
+            android:tag="6"
+            />
+        <ImageButton android:id="@+id/b5"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_toLeftOf="@id/b6"
+            android:layout_below="@id/b2"
+            android:scaleType="fitXY"
+            android:tag="5"
+
+            />
+        <ImageButton android:id="@+id/b4"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_toLeftOf="@id/b5"
+            android:layout_below="@id/b1"
+            android:scaleType="fitXY"
+            android:tag="4"
+            />
+
+        <ImageButton android:id="@+id/b9"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dip"
+            android:layout_below="@id/b6"
+            android:layout_marginRight="10dip"
+            android:scaleType="fitXY"
+            android:tag="9"
+            />
+        <ImageButton android:id="@+id/b8"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_toLeftOf="@id/b9"
+            android:layout_below="@id/b5"
+            android:scaleType="fitXY"
+            android:tag="8"
+            />
+        <ImageButton android:id="@+id/b7"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_toLeftOf="@id/b8"
+            android:layout_below="@id/b4"
+            android:scaleType="fitXY"
+            android:tag="7"
+
+            />
+
+    <TextView android:id="@+id/scoreboard"
+        android:layout_below="@id/b9"
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:padding="15dip"
+
+        />
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/facebook"
+        android:onClick="Facebook"/>-->
+
+   <!-- <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />-->
+
+
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cs442.team11.tictactoe" >
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/download"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".TicTacToeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".optionActivity"
+            android:label="@string/title_activity_option"
+            android:theme="@style/theme" >
+        </activity>
+        <activity
+            android:name=".NewgameActivity"
+            android:label="@string/title_activity_newgame" >
+        </activity>
+        <activity
+            android:name=".ColorPickerActivity"
+            android:label="@string/title_activity_color_picker" >
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".BluetoothActivity"
+            android:label="@string/title_activity_bluetooth" >
+        </activity>
+        <activity
+            android:name=".AdvancedgameActivity"
+            android:label="@string/title_activity_advancedgame" >
+        </activity>
+
+        <provider
+            android:name=".ScoreProvider"
+            android:authorities="com.cs442.team11.tictactoe"
+            android:enabled="true"
+            android:exported="true" >
+        </provider>
+    </application>
+
+</manifest>

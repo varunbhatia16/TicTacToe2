@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7986CB"
+    android:id="@+id/linearFirst"
+    >
+
+   <!-- <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIC TAC TOE"
+        android:textStyle="bold"
+        android:textColor="#D32F2F"
+        android:layout_gravity="center"
+        android:textSize="55dp"
+        android:layout_marginBottom="8dp"/>-->
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@drawable/images2"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="8dp"
+        />
+
+    <ImageView
+        android:id="@+id/main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/images1"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="8dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/link"
+        android:text="@string/link"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"
+        android:background="#D32F2F"/>`
+
+    <Button
+        android:id="@+id/newgame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Play Game"
+        android:onClick="newgame"
+        android:background="#9E9E9E"
+        android:paddingBottom="8dp"
+        android:layout_marginBottom="8dp"
+        />
+
+    <Button
+        android:id="@+id/options"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Options"
+        android:onClick="options"
+        android:background="#9E9E9E"
+        android:paddingBottom="8dp"
+        android:layout_marginBottom="8dp"
+        />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+
+        />
+
+    <!--<com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="18sp"
+        />
+</LinearLayout>

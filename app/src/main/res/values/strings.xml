@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">tic tac toe</string>
+   <!-- <string name="link"><a href="https://www.google.com/">DEMO</a></string>-->
+    <string name="link"><a href="http://www.wikihow.com/Play-Tic-Tac-Toe">How to play</a></string>
+    <string name="title_activity_option">Options</string>
+    <string name="button">Help</string>
+    <string name="button1">Quit</string>
+    <string name="button2">Advanced</string>
+    <color name="col">#F06292</color>
+    <string name="title_activity_newgame">New Game</string>
+    <string name="facebook_app_id">1737037293192536</string>
+
+    <string-array name="symbol">
+        <item>O</item>
+        <item>X</item>
+        <item>:)</item>
+        <item>:(</item>
+        <item>Correct</item>
+        <item>Wrong</item>
+       <!-- <item>@drawable/list1</item>
+        <item>@drawable/red</item>
+        <item>@drawable/correct</item>
+        <item>@drawable/wrong</item>-->
+    </string-array>
+
+    <string-array name="symbolvalues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="level">
+        <item>Normal</item>
+        <item>Hard</item>
+    </string-array>
+
+    <string-array name="levelvalues">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="anim">
+        <item>Rotate</item>
+        <item>Focus</item>
+        <item>Slide</item>
+    </string-array>
+
+    <string-array name="animvalues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string name="title_activity_color_picker">ColorPickerActivity</string>
+    <drawable name="blue_button_on">#D84315</drawable>
+    <drawable name="blue_button_off">#FAFAFA</drawable>
+    <color name="back">#7986CB</color>
+    <string name="title_activity_bluetooth">Use Bluetooth to play</string>
+    <string name="title_activity_advancedgame">AdvancedgameActivity</string>
+
+</resources>

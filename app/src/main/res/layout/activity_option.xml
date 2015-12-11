@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <!-- <Button
+        android:id="@+id/Two_player"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Two Player"
+        android:onClick="Two_player"
+        android:layout_weight="1"
+        android:textSize="20dp"/>-->
+
+    <CheckBox android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Two Player"
+        android:onClick="onCheckboxClicked"
+        />
+
+    <Button
+        android:id="@+id/Symbol"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Symbol"
+        android:onClick="Symbol"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/playername"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Player Name"
+        android:onClick="player"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/level"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Level"
+        android:onClick="level"
+        android:layout_weight="1"/>
+
+
+    <Button
+        android:id="@+id/Advance"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Advance"
+        android:onClick="Advance"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/Help"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        android:onClick="Help"
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/Quit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Quit"
+        android:onClick="Quit"
+        android:layout_weight="1"/>
+</LinearLayout>

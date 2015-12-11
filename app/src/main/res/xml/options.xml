@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <EditTextPreference
+            android:title="Player Name"
+            android:key="player"
+            android:summary="Please provide Player Name"
+            >
+        </EditTextPreference>
+
+        <CheckBoxPreference
+            android:key="two_player"
+            android:title="Two player"
+            android:summary="Check to Play with a friend"
+            android:defaultValue="false"
+            />
+
+         <Preference android:title="Invite a friend to play"
+            android:key="invite"
+            android:summary="Get connected with bluetooth and play on separate devices"/>
+
+        <ListPreference
+            android:key="symbol"
+            android:title="Symbol"
+            android:summary="choose symbol"
+            android:entries="@array/symbol"
+            android:entryValues="@array/symbolvalues"
+            android:defaultValue="1"/>
+
+        <ListPreference
+            android:key="level"
+            android:title="Level"
+            android:summary="Select level"
+            android:entries="@array/level"
+            android:entryValues="@array/levelvalues"
+            android:defaultValue="1"/>
+
+        <ListPreference
+            android:key="animation"
+            android:title="Feel Different"
+            android:summary="Select Animation"
+            android:entries="@array/anim"
+            android:entryValues="@array/animvalues"
+            android:defaultValue="1"/>
+
+        <Preference android:title="Advanced Settings"
+            android:key="@string/button2"
+            android:summary=""/>
+
+        <Preference android:title="Show Top Scores"
+            android:key="scores"
+            android:summary=""/>
+
+        <Preference android:title="Help"
+            android:key="@string/button"
+            android:summary=""/>
+
+        <Preference android:title="Quit"
+            android:key="@string/button1"
+            android:summary=""/>
+
+</PreferenceScreen>
